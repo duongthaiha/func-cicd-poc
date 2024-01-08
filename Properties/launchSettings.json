@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "func_cicd_poc": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7021",
+      "launchBrowser": false
+    }
+  }
+}
