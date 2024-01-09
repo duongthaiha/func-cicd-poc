@@ -80,17 +80,23 @@ resource functionApp 'Microsoft.Web/sites@2021-03-01' = {
           value: '~4'
         }
         {
-          name: 'WEBSITE_NODE_DEFAULT_VERSION'
-          value: '~14'
-        }
-        {
-          name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
-          value: applicationInsights.properties.InstrumentationKey
+          name: 'APPLICATIONINSIGHTS_CONNECTION_STRING'
+          value: applicationInsights.properties.ConnectionString
         }
         {
           name: 'FUNCTIONS_WORKER_RUNTIME'
           value: functionWorkerRuntime
         }
+        {
+          
+          name: 'WEBSITE_USE_PLACEHOLDER_DOTNETISOLATED'
+          value: '1'
+        }
+        {
+          name: 'WEBSITE_WEBDEPLOY_USE_SCM'
+          value: 'true'
+        }
+
       ]
       ftpsState: 'FtpsOnly'
       minTlsVersion: '1.2'
