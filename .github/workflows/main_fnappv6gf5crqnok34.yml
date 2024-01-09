@@ -3,7 +3,7 @@
 
 name: Build and deploy dotnet core app to Azure Function App - fnappv6gf5crqnok34
 
-on: |+
+on:
   push:
     branches:
       - main
